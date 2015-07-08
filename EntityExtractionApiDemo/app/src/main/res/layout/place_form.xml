@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_dark"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tvplacename"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <TextView
+        android:id="@+id/tvplacepopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <TextView
+        android:id="@+id/tvplacecountrycode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <TextView
+        android:id="@+id/tvplacecontinent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EntityExtractionApiDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="extraction_source">
+        <item>Local Text</item>
+        <item>Web Page</item>
+        <item>Web Link</item>
+        <item>Local File</item>
+    </string-array>
+    <string-array name="entity_type">
+        <item>People</item>
+        <item>Places</item>
+        <item>Companies</item>
+        <item>Organizations</item>
+        <item>Languages</item>
+        <item>Drugs</item>
+        <item>Professions</item>
+        <item>Universities</item>
+        <item>Phones</item>
+        <item>Films</item>
+        <item>Address</item>
+        <item>Date</item>
+        <item>Email</item>
+    </string-array>
+</resources>
