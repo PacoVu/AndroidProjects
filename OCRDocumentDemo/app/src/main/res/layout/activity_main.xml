@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:id="@+id/lloptions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Image"
+                android:id="@+id/bselectimage"
+                android:onClick="DoShowSelectImage"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Camera"
+                android:id="@+id/bstartcamera"
+                android:onClick="DoTakePhoto"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llcamerabuttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+            android:visibility="gone">
+            <Button
+                android:id="@+id/rotate_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Rotate 90 degs"
+                android:onClick="DoRotateImage"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Start OCR"
+                android:id="@+id/bstartocr"
+                android:onClick="DoStartOCR"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView"
+                android:layout_weight="3" />
+            <LinearLayout
+                android:id="@+id/llresultcontainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etresult"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:background="#a2000000"
+                    android:textAlignment="center"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="DoCloseResult"/>
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pbocrrecognizing"
+                android:visibility="gone"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>

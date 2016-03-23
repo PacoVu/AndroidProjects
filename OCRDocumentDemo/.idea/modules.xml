@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OCRDocumentDemo.iml" filepath="$PROJECT_DIR$/OCRDocumentDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hodclient/hodclient.iml" filepath="$PROJECT_DIR$/hodclient/hodclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hodresponseparser/hodresponseparser.iml" filepath="$PROJECT_DIR$/hodresponseparser/hodresponseparser.iml" />
+    </modules>
+  </component>
+</project>
